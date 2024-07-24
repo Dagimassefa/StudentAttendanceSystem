@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>SchoolAttendance System</title>
+    <title>School Attendance System</title>
 
   <!-- Bootstrap CSS -->
     <link href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -67,7 +67,7 @@ https://templatemo.com/tm-586-scholar
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
                       <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                       <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
+                    <li class="scroll-to-section"><a href="{{ route('login') }}">Login</a></li>
                       <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
                   </ul>   
                     <a class='menu-trigger'>
