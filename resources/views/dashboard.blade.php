@@ -264,6 +264,13 @@
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
+                                 <li class="">
+                                  <a href="{{ route('generate.qr') }}" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Generate QR</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
                               <li class="pcoded-hasmenu">
                                   <a href="javascript:void(0)" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
