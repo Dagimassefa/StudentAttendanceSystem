@@ -27,7 +27,15 @@ class GenerateQR extends Controller
         $student->email = $validated['email_address'];
         $student->password = Hash::make($validated['password']);
         $student->save();
-         $qrCode = QrCode::size(200)->generate("Full Name: {$student->name}, ID: {$student->id}");
+           $url = url("/read-qr/{$student->id}");
+
+    // Generate the QR code with the URL
+    $qrCode = QrCode::size(200)->generate($url);
    return view('generateQrCode', compact('qrCode'));
     }
+    public function ReadQrCode($id)
+{
+    $student = User::findOrFail($id);
+    return view('studentID', compact('student'));
+}
 }
