@@ -142,7 +142,7 @@
                             </li>
                         </ul>
                         <ul class="nav-right">
-                        
+                   
                             <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
     <img src="{{ asset('assets/images/Placeholder_Person.jpg') }}" class="img-radius" alt="User-Profile-Image">
@@ -176,7 +176,7 @@
                       <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                       <div class="pcoded-inner-navbar main-menu">
                           <div class="">
-                            <div class="main-menu-header">
+                             <div class="main-menu-header">
     <img class="img-80 img-radius" src="{{ asset('assets/images/Placeholder_Person.jpg') }}" alt="User-Profile-Image">
     <div class="user-details">
         <span id="more-details">{{ Auth::check() ? Auth::user()->name : 'Guest' }}<i class="fa fa-caret-down"></i></span>
@@ -222,7 +222,7 @@
                           </ul>
                           <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Users &amp; Teachers List</div>
                           <ul class="pcoded-item pcoded-left-item">
-                              <li class="active">
+                              <li class="">
     <a href="{{ route('show.users.list') }}" class="waves-effect waves-dark">
         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Users List</span>
@@ -236,7 +236,7 @@
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
-                              <li>
+                              <li  class="active">
                                   <a href="{{ route('show.teachers.list') }}" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Teachers List</span>

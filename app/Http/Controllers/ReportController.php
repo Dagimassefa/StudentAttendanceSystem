@@ -9,10 +9,23 @@ class ReportController extends Controller
 {
 public function showUsersList()
 {
-    $users = \DB::table('users')->select('id', 'name', 'email', 'phone_number', 'created_at')->get();
+    $users = \DB::table('users')
+        ->select('id', 'name', 'email', 'phone_number', 'created_at')
+        ->where('role', 'student')
+        ->get();
 
     return view('users-list', ['users' => $users]);
 }
+public function showTeachersList()
+{
+    $users = \DB::table('users')
+        ->select('id', 'name', 'email', 'phone_number', 'created_at')
+        ->where('role', 'teacher')
+        ->get();
+
+    return view('teachers-list', ['users' => $users]);
+}
+
   public function dailyReport()
     {
         $today = Carbon::today();

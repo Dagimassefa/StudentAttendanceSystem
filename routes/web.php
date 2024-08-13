@@ -31,3 +31,8 @@ Route::get('report/weekly', [ReportController::class, 'weeklyReport'])->name('re
 Route::get('report/monthly', [ReportController::class, 'monthlyReport'])->name('report.monthly');
 Route::get('report/yearly', [ReportController::class, 'yearlyReport'])->name('report.yearly');
 Route::post('take-attendance/{id}', [AttendanceController::class, 'store'])->name('take.attendance');
+Route::get('/register-teacher', [GenerateQR::class, 'showRegisterTeacherForm'])->name('register.teacher.form');
+Route::post('/register-teacher', [GenerateQR::class, 'registerTeacher'])->name('register.teacher');
+Route::get('show-teachers-list', [ReportController::class, 'showTeachersList'])->name('show.teachers.list');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/profile', [DashboardController::class, 'showProfile'])->name('profile.show');
